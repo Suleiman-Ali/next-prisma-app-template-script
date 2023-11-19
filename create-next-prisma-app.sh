@@ -51,6 +51,7 @@ echo "Prepared prisma 🟢";
 
 rm -rf .env;
 echo 'DATABASE_URL="mysql://username:password@localhost:5432/mydb"' > .env;
+echo "*.env" >> .gitignore;
 echo "Prepared .env file 🟢";
 
 cd prisma;
