@@ -44,6 +44,13 @@ echo "export default function HomePage() {
 echo "Prepared page.tsx file 🟢";
 cd ..;
 
+echo "🟡 Adding and initializing prettier sort 🟡";
+npm install -D prettier prettier-plugin-tailwindcss;
+echo "{
+  'plugins': ['prettier-plugin-tailwindcss']
+}" > .prettierrc;
+echo "Prepared .prettierrc file 🟢";
+
 echo "🟡 Adding and initializing prisma 🟡";
 npm i prisma;
 npx prisma init;
